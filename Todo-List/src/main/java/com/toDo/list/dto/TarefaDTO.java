@@ -38,64 +38,78 @@ public class TarefaDTO {
         prioridade = entity.getPrioridade();
         dataCadastro = entity.getDataCadastro();
         status = entity.getStatus();
-        idUsuario = entity.getUsuario().getId(); //Fazendo a busca fo usuario pelo ID
+        idUsuario = entity.getUsuario().getId(); 
     }
 
-    //GET
 
-    public Long getId() {
+    public Long getId() 
+    {
         return id;
     }
 
-    public String getDescricao() {
+    public String getDescricao()
+    {
         return descricao;
     }
 
-    public String getSetor() {
+    public String getSetor() 
+    {
         return setor;
     }
 
-    public Prioridade getPrioridade() {
+    public Prioridade getPrioridade() 
+    {
+        
         return prioridade;
     }
 
-    public LocalDate getDataCadastro() {
+    public LocalDate getDataCadastro() 
+    {
         return dataCadastro;
     }
 
-    public Status getStatus() {
+    public Status getStatus() 
+    {
         return status;
     }
 
-    public Long getIdUsuario() {
+    public Long getIdUsuario() 
+    {
         return idUsuario;
     }
 
-    public void setId(Long id) {
+    public void setId(Long id) 
+    {
         this.id = id;
     }
 
-    public void setDescricao(String descricao) {
+    public void setDescricao(String descricao) 
+    {
         this.descricao = descricao;
     }
 
-    public void setSetor(String setor) {
+    public void setSetor(String setor) 
+    {
         this.setor = setor;
     }
 
-    public void setPrioridade(Prioridade prioridade) {
+    public void setPrioridade(Prioridade prioridade)
+    {
         this.prioridade = prioridade;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(Status status) 
+    {
         this.status = status;
     }
 
-    public void setDataCadastro(LocalDate dataCadastro) {
+    public void setDataCadastro(LocalDate dataCadastro) 
+    {
         this.dataCadastro = dataCadastro;
     }
 
-    public void setIdUsuario(Long idUsuario) {
+    public void setIdUsuario(Long idUsuario) 
+    {
         this.idUsuario = idUsuario;
     }
 
