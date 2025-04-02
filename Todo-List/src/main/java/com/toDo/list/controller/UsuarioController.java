@@ -19,7 +19,8 @@ public class UsuarioController
     UsuarioService usuarioService;
 
     @PostMapping(value ="/new")
-    public ResponseEntity<UsuarioDTO> criarUsuario(@Valid @RequestBody UsuarioDTO dto){
+    public ResponseEntity<UsuarioDTO> criarUsuario(@Valid @RequestBody UsuarioDTO dto)
+    {
         dto = usuarioService.criarUsuario(dto);
         return ResponseEntity.ok(dto);
     }
