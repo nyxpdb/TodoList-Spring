@@ -39,31 +39,38 @@ public class Tarefa
         this.usuario = usuario;
     }
 
-    public Long getId() {
+    public Long getId() 
+    {
         return id;
     }
 
-    public String getDescricao() {
+    public String getDescricao() 
+    {
         return descricao;
     }
 
-    public String getSetor() {
+    public String getSetor()
+    {
         return setor;
     }
 
-    public Prioridade getPrioridade() {
+    public Prioridade getPrioridade() 
+    {
         return prioridade;
     }
 
-    public LocalDate getDataCadastro() {
+    public LocalDate getDataCadastro()
+    {
         return dataCadastro;
     }
 
-    public Status getStatus() {
+    public Status getStatus() 
+    {
         return status;
     }
 
-    public Usuario getUsuario() {
+    public Usuario getUsuario() 
+    {
         return usuario;
     }
 
@@ -71,30 +78,34 @@ public class Tarefa
         this.id = id;
     }
 
-    public void setDescricao(String descricao) {
+    public void setDescricao(String descricao) 
+    {
         this.descricao = descricao;
     }
 
-    public void setPrioridade(Prioridade prioridade) {
+    public void setPrioridade(Prioridade prioridade)
+    {
         this.prioridade = prioridade;
     }
 
-    public void setSetor(String setor) {
+    public void setSetor(String setor) 
+    {
         this.setor = setor;
     }
 
-    public void setDataCadastro(LocalDate dataCadastro) {
+    public void setDataCadastro(LocalDate dataCadastro)
+    {
         this.dataCadastro = dataCadastro;
     }
 
-    public void setStatus(Status status) {
+    public void setStatus(Status status)
+    {
         this.status = status;
     }
 
-    public void setUsuario(Usuario usuario) {
+    public void setUsuario(Usuario usuario) 
+    {
         this.usuario = usuario;
     }
-
-
 }
 
