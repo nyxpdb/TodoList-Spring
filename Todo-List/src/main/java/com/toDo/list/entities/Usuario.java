@@ -13,49 +13,57 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    @Column(unique = true) // Isso garante que não tenha mais de um email igual
+    @Column(unique = true)
     private String email;
 
     @OneToMany(mappedBy = "usuario")
     private List<Tarefa> tarefas = new ArrayList<>();
 
 
-    public Usuario() {
+    public Usuario() 
+    {
+        
     }
 
-    public Usuario(Long id, String nome, String email) {
+    public Usuario(Long id, String nome, String email) 
+    {
         this.id = id;
         this.nome = nome;
         this.email = email;
     }
 
-    //GET
-    public Long getId() {
+    public Long getId() 
+    {
         return id;
     }
 
-    public String getNome() {
+    public String getNome() 
+    {
         return nome;
     }
 
-    public String getEmail() {
+    public String getEmail() 
+    {
         return email;
     }
 
-    //SET
-    public void setId(Long id) {
+    public void setId(Long id)
+    {
         this.id = id;
     }
 
-    public void setNome(String nome) {
+    public void setNome(String nome)
+    {
         this.nome = nome;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(String email) 
+    {
         this.email = email;
     }
 
-    public void setTarefas(List<Tarefa> tarefas) {
+    public void setTarefas(List<Tarefa> tarefas) 
+    {
         this.tarefas = tarefas;
     }
 }
